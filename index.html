@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script src="sort.js" ></script>
+    </head>
+    <body>
+        <div id="messages"></div>
+        <script>
+            var messages = document.getElementById("messages");
+            var input = [4,7,8,1,6,3,2,0,9,5];
+            messages.append('<br/>input: '+input);
+            var sort = new Sort(input);
+            var result = sort.bubbleSort();
+            messages.append('<br/>bubble: '+result);
+        </script>
+    </body>
+</html>
